@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALHI ROUMEISSA website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="image-container">
+            <div class="round-image">
+                <img src="https://i.pinimg.com/736x/bb/ea/06/bbea063ef50e770860d4727f5d6c915d.jpg" alt="romeissa's photo">
+            </div>
+        </aside>
+        <main>
+            <header>
+                <h1>Salhi Roumeissa</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="home">
+                <h2>Welcome to my website</h2>
+                <p>Hi, it's Roumeissa. I'm a web designer, video and photo editor.</p>
+            </section>
+            <section id="about">
+                <h2>About me</h2>
+                <p>My name is Salhi Roumeissa, and I am a Computer Science student at Mila University, Algeria. I have over four years of experience in editing videos for social media and one year of experience in designing web pages using HTML, CSS, and JavaScript. Currently, I am expanding my skills by learning C++.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: arbaisalhi.590@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/romaissa.slhi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Rima Ojine</a>
+                    <a href="https://youtube.com/@romyyyyy.y?si=7IZGbf0FXOBoDxFB" target="_blank" title="YouTube"><i class="fab fa-youtube"></i> Rima Ojine</a>
+                    <a href="https://www.linkedin.com/in/romaissa-salhi-77802928a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> Roumeissaa salhi</a>
+                    <a href="https://wa.me/qr/XJJ7QY3OFY4LB1" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> +213781040546</a>
+                </div>
+            </section>
+            <footer>
+                <p>&copy; 2024 Salhi Roumeissa. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+<style>
+ :root {
+    --primary-color: #FF69B4;
+    --secondary-color: #FFB6C1;
+    --text-color: #4A0E2E;
+    --background-color: #FFF0F5;
+    --light-break-color: #FFE4E1;
+}
+
+body, html {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+aside.image-container {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.round-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.round-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section:not(:last-child) {
+    border-bottom: 2px solid var(--light-break-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside.image-container {
+        flex: 0 0 auto;
+        padding: 30px 0;
+    }
+
+    .round-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    main {
+        flex: 1;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+</style>
